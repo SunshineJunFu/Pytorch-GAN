@@ -39,7 +39,7 @@ CEH(p,q) = -p(x)log[q(x)] - [1-p(x)]log[1-q(x)]
 
 PIPE Line
 
-![](./algorithm.gif)
+![](./algorithm.GIF)
 
 
 
