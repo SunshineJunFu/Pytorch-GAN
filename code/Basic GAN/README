@@ -1,1 +1,18 @@
-HHHH
+
+Self-information:  a measure of information content
+
+I(x) = - log(p(x)) 
+
+![](https://wikimedia.org/api/rest_v1/media/math/render/svg/fc3541511e5b8a66bd14ff315aeb18d5dd5f4455)
+
+p(x) = Pr(X=x) represents the probability that message x is choosen from all possible choices in message space X.
+
+Entropy: a measure of the amount of uncertainty
+
+H(X) = E[I(X)]
+
+for discrete message space X:
+
+H(X) = 
+
+
