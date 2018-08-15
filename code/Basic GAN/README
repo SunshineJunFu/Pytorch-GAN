@@ -37,7 +37,9 @@ for binary discrete message space X:
 
 CEH(p,q) = -p(x)log[q(x)] - [1-p(x)]log[1-q(x)]
 
+PIPE Line
 
+![](https://github.com/fujunustc/generative-adversarial-network-/blob/master/code/Basic%20GAN/algorithm.GIF)
 
 
 
