@@ -3,8 +3,6 @@ Self-information:  a measure of information content
 
 I(x) = - log(p(x)) 
 
-![](https://wikimedia.org/api/rest_v1/media/math/render/svg/fc3541511e5b8a66bd14ff315aeb18d5dd5f4455)
-
 p(x) = Pr(X=x) represents the probability that message x is choosen from all possible choices in message space X.
 
 Entropy: a measure of the amount of uncertainty
@@ -13,6 +11,33 @@ H(X) = E[I(X)]
 
 for discrete message space X:
 
-H(X) = 
+H(X) = sum(-p(x)log[p(x)]) 
+
+for continous message space X:
+
+H(x) = integral(-p(x)log[p(x)]dx) 
+
+Note: the bigger entropy means more uncertainty, more self-information. 
+
+Kullback–Leibler divergence(information gain): measure the distance between two distributions, a "true" probability distribution p, and an arbitrary probability distribution q.
+
+Dkl(p||q) =  Ep[log{p(x)/q(x)}]
+
+Form for continous and discrete message space is the same as Entropy.
+
+Note: the smaller KL means that the fake distribution is more closer to 'true' probability distribution.
+
+Cross entropy:
+
+CEH(p,q) = Ep[-logq] = H(p) + Dkl(p||q)
+
+if distribution is regarded as "true" distribution, H(p) will be a constant. Hence, if we plan to minimize Cross entropy, it can be regarded as minimize KL divergence.
+
+for binary discrete message space X:
+
+CEH(p,q) = -p(x)log[q(x)] - [1-p(x)]log[1-q(x)]
+
+
+
 
 
