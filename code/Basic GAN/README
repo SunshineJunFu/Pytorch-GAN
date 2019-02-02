@@ -39,7 +39,7 @@ CEH(p,q) = -p(x)log[q(x)] - [1-p(x)]log[1-q(x)]
 
 PIPE Line
 
-![](./algorithm.GIF)
+![](algorithm.GIF)
 
 loss.backward() computes dloss/dx for every parameter x which has requires_grad=True. These are accumulated into x.grad for every parameter x. In pseudo-code:
 
